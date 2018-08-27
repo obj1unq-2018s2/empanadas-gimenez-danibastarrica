@@ -6,6 +6,11 @@ object gimenez {
 	var sueldo = 15000
 	method sueldo() { return 15000 }
 	method sueldo(nuevoValor) { sueldo = nuevoValor }
+	method totalCobrado(){
+		var sueldoTotal= sueldo()+ sueldo.sueldo (nuevoValor)
+	}
+	method cobrarSueldo() { return self.suel
+	}
 }
 
 object baigorria {
@@ -22,5 +27,12 @@ object baigorria {
 object galvan {
 	var dinero = 300000
 	method dinero() { return dinero }
-	method pagarA( empleado ) { dinero -= empleado.sueldo() }
-}
+	method pagarA( empleado ) { dinero -= empleado.sueldo()
+	empleado.cobrarSueldo()	
+	}
+	
+	}
+
+
+	
+
