@@ -6,10 +6,18 @@ object gimenez {
 	var sueldo = 15000
 	method sueldo() { return 15000 }
 	method sueldo(nuevoValor) { sueldo = nuevoValor }
+	
 	method totalCobrado(){
+		// TODO Este código tiene muchos errores, confunde mensajes con atributos,
+		// guarda valor en una variable que jamás se vuelve a usar, etc.
+		// Tampoco entiendo por qué modifica el sueldo.
 		var sueldoTotal= sueldo()+ sueldo.sueldo (nuevoValor)
 	}
-	method cobrarSueldo() { return self.suel
+	
+	method cobrarSueldo() {
+		// TODO Acá hay evidentemente un problema en el commit, prestá atención para tratar de evitar estos errores. 
+		// return self.suel
+		return self.sueldo()
 	}
 }
 
